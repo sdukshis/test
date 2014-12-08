@@ -1,5 +1,5 @@
 language: cpp
-srcipt:
+script: 
     - mkdir build
     - cd build
     - cmake ..
