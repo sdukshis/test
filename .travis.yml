@@ -1,0 +1,7 @@
+language: cpp
+srcipt:
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+    - ./person.test
