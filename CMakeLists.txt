@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(person CXX)
+project(person)
 
 add_definitions(-Wall)
 add_definitions(-std=c++11)
@@ -28,9 +28,11 @@ include_directories(${GTEST_INCLUDES})
 
 add_executable(person.test ${TEST_SOURCES})
 
+find_package(Threads)
 target_link_libraries(person.test
     ${GTEST_LIB}
     ${GTEST_MAIN_LIB}
+    ${CMAKE_THREAD_LIBS_INIT}
 )
 
 enable_testing()
