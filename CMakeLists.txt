@@ -16,7 +16,7 @@ ExternalProject_Add(
     SVN_REPOSITORY  http://googletest.googlecode.com/svn/trunk/
     PREFIX gtest
     INSTALL_COMMAND ""
-    LOG_DOWNLOAD 0
+    LOG_DOWNLOAD OFF
 )
 ExternalProject_Get_Property(gtest_project SOURCE_DIR BINARY_DIR DOWNLOAD_DIR)
 
